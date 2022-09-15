@@ -1,0 +1,25 @@
+<p [style.background-color]="'red'" [style.width.px]="100">STYLES</p>
+<p [style]="'background-color: blue; color: white'">STYLES</p>
+<p [style]="{'background-color': 'blue', color: 'white'}">STYLES</p>
+
+<p [class.red]="true">CLASS</p>
+<p [class.red-blue]="true">CLASS</p>
+<p [class.red]="true" [class.blue]="true" [class.green]="true">CLASS</p>
+<p [ngClass]="'red'+1">CLASS</p>
+<p [ngClass]="'red green'+' '+'blue'">CLASS</p>
+
+<p [class]="'red green'+' '+'blue'">CLASS</p>
+<p [class]="['red', 'green', 'blue']">CLASS</p>
+<p [class]="{red: true, green: false, blue: true, 'dark-blue': true}">CLASS</p>
+
+<p>Attributes</p>
+<p title="title">Attributes</p>
+<p [title]="'title'+12">Attributes</p>
+<p [attr.data-foo]="123">Attributes</p>
+<p [attr.draggable]="true">Attributes</p>
+<p [attr.class]="'foo'">Attributes</p>
+<p [attr.id]="'id'">Attributes</p>
+
+<td [colSpan]="2+1">1</td>
+<td colspan="2">1</td>
+<td [attr.colspan]="2+1">1</td>
