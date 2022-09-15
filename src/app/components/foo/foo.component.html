@@ -1,0 +1,31 @@
+<dir *ngIf="condition">It's okay</dir>
+<dir *ngIf="!condition">It's bad</dir>
+
+<button (click)="condition = !condition">Toggle</button>
+
+<hr>
+<dir *ngIf="condition; else: elseCase">It's okay</dir>
+<ng-template #elseCase>
+  <dir>It's bad</dir>
+</ng-template>
+
+<hr>
+<button (click)="generateUser()">Generate User</button>
+
+<ul *ngIf="deepObject?.user as user">
+  <li>Name is {{ user.name }}</li>
+  <li>Surname is {{ user.surname }}</li>
+</ul>
+
+<hr>
+<ul>
+  <li *ngFor="let user of users; index as i; trackBy: trackBy">{{ i }}: {{ user.name }}</li>
+</ul>
+
+<ul>
+  <li *ngFor="let user of users; index as i; trackBy: trackBy" [ngSwitch]="user.template">
+    <p *ngSwitchCase="'bold'"><b>{{ user.name }}</b></p>
+    <p *ngSwitchCase="'italic'"><i>{{ user.name }}</i></p>
+    <p *ngSwitchDefault><span>{{ user.name }}</span></p>
+  </li>
+</ul>
