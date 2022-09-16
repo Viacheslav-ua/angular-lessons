@@ -1,2 +1,2 @@
-<app-foo [title]="condition ? 'one'  : 'two'"></app-foo>
+<app-foo [(counter)]="age" [fooBar]="'1345'" (sayHi)="onSayHi($event)" [title]="condition ? 'one'  : 'two'"></app-foo>
 <button (click)="condition = !condition">{{ condition ? 'two'  : 'one' }}</button>
