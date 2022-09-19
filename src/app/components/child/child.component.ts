@@ -1,3 +1,4 @@
+/* eslint-disable @angular-eslint/no-empty-lifecycle-method */
 /* eslint-disable @angular-eslint/no-conflicting-lifecycle */
 import {
   AfterContentChecked,
@@ -33,39 +34,39 @@ export class ChildComponent implements
   title = ''
 
   constructor() {
-    console.log('ChildComponent.constructor');
+    // console.log('ChildComponent.constructor');
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log('ChildComponent.OnChanges', changes);
+    // console.log('ChildComponent.OnChanges', changes);
 
   }
   ngOnInit(): void {
-    console.log('ChildComponent.ngOnInit');
+    // console.log('ChildComponent.ngOnInit');
 
   }
   ngDoCheck(): void {
-    console.log('ChildComponent.DoCheck');
+    // console.log('ChildComponent.DoCheck');
 
   }
   ngAfterContentInit(): void {
-    console.log('ChildComponent.AfterContentInit');
+    // console.log('ChildComponent.AfterContentInit');
 
   }
   ngAfterContentChecked(): void {
-    console.log('ChildComponent.AfterContentChecked');
+    // console.log('ChildComponent.AfterContentChecked');
 
   }
   ngAfterViewInit(): void {
-    console.log('ChildComponent.AfterViewInit');
+    // console.log('ChildComponent.AfterViewInit');
 
   }
   ngAfterViewChecked(): void {
-    console.log('ChildComponent.AfterViewChecked');
+    // console.log('ChildComponent.AfterViewChecked');
 
   }
   ngOnDestroy(): void {
-    console.log('ChildComponent.OnDestroy');
+    // console.log('ChildComponent.OnDestroy');
 
   }
 }
