@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular-lessons'
   show = true
+  array = [1, 2, 3, 4]
+
+  modifyArray() {
+    this.array.push(5)
+    // this.array = [...this.array, 5]
+  }
 }
