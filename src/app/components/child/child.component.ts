@@ -68,4 +68,9 @@ export class ChildComponent implements
     console.log('ChildComponent.OnDestroy');
 
   }
+
+  sayHi() {
+    console.log('Hi from child component');
+
+  }
 }

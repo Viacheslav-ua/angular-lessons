@@ -1,2 +1,7 @@
 <p>Parent works! {{ title }}</p>
-<app-child [title]="title"></app-child>
+
+<ng-content select="app-child"></ng-content>
+
+<ng-container *ngFor="let template of templates">
+  <ng-container *ngTemplateOutlet="template; context: {$implicit: 'Template value'}"></ng-container>
+</ng-container>
